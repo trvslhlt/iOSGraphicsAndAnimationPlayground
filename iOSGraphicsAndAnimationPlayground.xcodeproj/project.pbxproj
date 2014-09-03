@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8841ACA719B696670003A63B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8841ACA619B696670003A63B /* Foundation.framework */; };
+		8841ACA919B696670003A63B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8841ACA819B696670003A63B /* CoreGraphics.framework */; };
+		8841ACAB19B696670003A63B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8841ACAA19B696670003A63B /* UIKit.framework */; };
+		8841ACB119B696670003A63B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8841ACAF19B696670003A63B /* InfoPlist.strings */; };
+		8841ACB319B696670003A63B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8841ACB219B696670003A63B /* main.m */; };
+		8841ACB719B696670003A63B /* THAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8841ACB619B696670003A63B /* THAppDelegate.m */; };
+		8841ACB919B696670003A63B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8841ACB819B696670003A63B /* Images.xcassets */; };
+		8841ACC019B696680003A63B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8841ACBF19B696670003A63B /* XCTest.framework */; };
+		8841ACC119B696680003A63B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8841ACA619B696670003A63B /* Foundation.framework */; };
+		8841ACC219B696680003A63B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8841ACAA19B696670003A63B /* UIKit.framework */; };
+		8841ACCA19B696680003A63B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8841ACC819B696680003A63B /* InfoPlist.strings */; };
+		8841ACCC19B696680003A63B /* iOSGraphicsAndAnimationPlaygroundTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8841ACCB19B696680003A63B /* iOSGraphicsAndAnimationPlaygroundTests.m */; };
+		8841ACE219B6990A0003A63B /* THCALayerWithImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 8841ACE119B6990A0003A63B /* THCALayerWithImage.m */; };
+		8841ACFE19B699130003A63B /* THCaps.m in Sources */ = {isa = PBXBuildFile; fileRef = 8841ACE519B699130003A63B /* THCaps.m */; };
+		8841ACFF19B699130003A63B /* THCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8841ACE719B699130003A63B /* THCircle.m */; };
+		8841AD0019B699130003A63B /* THCircleWithoutAntialiasing.m in Sources */ = {isa = PBXBuildFile; fileRef = 8841ACE919B699130003A63B /* THCircleWithoutAntialiasing.m */; };
+		8841AD0119B699130003A63B /* THClippingPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 8841ACEB19B699130003A63B /* THClippingPath.m */; };
+		8841AD0219B699130003A63B /* THContextDrawPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 8841ACED19B699130003A63B /* THContextDrawPath.m */; };
+		8841AD0319B699130003A63B /* THContextEOFillPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 8841ACEF19B699130003A63B /* THContextEOFillPath.m */; };
+		8841AD0419B699130003A63B /* THCubicBezierCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = 8841ACF119B699130003A63B /* THCubicBezierCurve.m */; };
+		8841AD0519B699130003A63B /* THJoins.m in Sources */ = {isa = PBXBuildFile; fileRef = 8841ACF319B699130003A63B /* THJoins.m */; };
+		8841AD0619B699130003A63B /* THLabeledView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8841ACF519B699130003A63B /* THLabeledView.m */; };
+		8841AD0719B699130003A63B /* THLineDashPatterns.m in Sources */ = {isa = PBXBuildFile; fileRef = 8841ACF719B699130003A63B /* THLineDashPatterns.m */; };
+		8841AD0819B699130003A63B /* THMultiplyBlendMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 8841ACF919B699130003A63B /* THMultiplyBlendMode.m */; };
+		8841AD0919B699130003A63B /* THQuadraticBezierCurve.m in Sources */ = {isa = PBXBuildFile; fileRef = 8841ACFB19B699130003A63B /* THQuadraticBezierCurve.m */; };
+		8841AD0A19B699130003A63B /* THRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8841ACFD19B699130003A63B /* THRectangle.m */; };
+		8841AD0E19B6991A0003A63B /* THDrawRectImplementationScraper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8841AD0D19B6991A0003A63B /* THDrawRectImplementationScraper.m */; };
+		8841AD1819B699220003A63B /* THAnimationsPlayground.m in Sources */ = {isa = PBXBuildFile; fileRef = 8841AD1119B699220003A63B /* THAnimationsPlayground.m */; };
+		8841AD1919B699220003A63B /* THHomeMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 8841AD1319B699220003A63B /* THHomeMenu.m */; };
+		8841AD1A19B699220003A63B /* THRudimentsGalleryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8841AD1519B699220003A63B /* THRudimentsGalleryVC.m */; };
+		8841AD1B19B699220003A63B /* THRudimentsViewDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 8841AD1719B699220003A63B /* THRudimentsViewDetailVC.m */; };
+		8841AD1E19B6994C0003A63B /* THContstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 8841AD1D19B6994C0003A63B /* THContstants.m */; };
+		8841AD2219B699E90003A63B /* grass_island.png in Resources */ = {isa = PBXBuildFile; fileRef = 8841AD2119B699E90003A63B /* grass_island.png */; };
+		8841AD2419B69B2B0003A63B /* THCaps.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8841ACE519B699130003A63B /* THCaps.m */; };
+		8841AD2519B69B2B0003A63B /* THCircle.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8841ACE719B699130003A63B /* THCircle.m */; };
+		8841AD2619B69B2B0003A63B /* THCircleWithoutAntialiasing.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8841ACE919B699130003A63B /* THCircleWithoutAntialiasing.m */; };
+		8841AD2719B69B2B0003A63B /* THClippingPath.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8841ACEB19B699130003A63B /* THClippingPath.m */; };
+		8841AD2819B69B2B0003A63B /* THContextDrawPath.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8841ACED19B699130003A63B /* THContextDrawPath.m */; };
+		8841AD2919B69B2B0003A63B /* THContextEOFillPath.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8841ACEF19B699130003A63B /* THContextEOFillPath.m */; };
+		8841AD2A19B69B2B0003A63B /* THCubicBezierCurve.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8841ACF119B699130003A63B /* THCubicBezierCurve.m */; };
+		8841AD2B19B69B2B0003A63B /* THJoins.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8841ACF319B699130003A63B /* THJoins.m */; };
+		8841AD2C19B69B2B0003A63B /* THLabeledView.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8841ACF519B699130003A63B /* THLabeledView.m */; };
+		8841AD2D19B69B2B0003A63B /* THLineDashPatterns.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8841ACF719B699130003A63B /* THLineDashPatterns.m */; };
+		8841AD2E19B69B2B0003A63B /* THMultiplyBlendMode.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8841ACF919B699130003A63B /* THMultiplyBlendMode.m */; };
+		8841AD2F19B69B2B0003A63B /* THQuadraticBezierCurve.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8841ACFB19B699130003A63B /* THQuadraticBezierCurve.m */; };
+		8841AD3019B69B2B0003A63B /* THRectangle.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8841ACFD19B699130003A63B /* THRectangle.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8841ACC319B696680003A63B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8841AC9B19B696670003A63B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8841ACA219B696670003A63B;
+			remoteInfo = iOSGraphicsAndAnimationPlayground;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8841AD2319B69B160003A63B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 7;
+			files = (
+				8841AD2419B69B2B0003A63B /* THCaps.m in CopyFiles */,
+				8841AD2519B69B2B0003A63B /* THCircle.m in CopyFiles */,
+				8841AD2619B69B2B0003A63B /* THCircleWithoutAntialiasing.m in CopyFiles */,
+				8841AD2719B69B2B0003A63B /* THClippingPath.m in CopyFiles */,
+				8841AD2819B69B2B0003A63B /* THContextDrawPath.m in CopyFiles */,
+				8841AD2919B69B2B0003A63B /* THContextEOFillPath.m in CopyFiles */,
+				8841AD2A19B69B2B0003A63B /* THCubicBezierCurve.m in CopyFiles */,
+				8841AD2B19B69B2B0003A63B /* THJoins.m in CopyFiles */,
+				8841AD2C19B69B2B0003A63B /* THLabeledView.m in CopyFiles */,
+				8841AD2D19B69B2B0003A63B /* THLineDashPatterns.m in CopyFiles */,
+				8841AD2E19B69B2B0003A63B /* THMultiplyBlendMode.m in CopyFiles */,
+				8841AD2F19B69B2B0003A63B /* THQuadraticBezierCurve.m in CopyFiles */,
+				8841AD3019B69B2B0003A63B /* THRectangle.m in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8841ACA319B696670003A63B /* iOSGraphicsAndAnimationPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSGraphicsAndAnimationPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8841ACA619B696670003A63B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8841ACA819B696670003A63B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8841ACAA19B696670003A63B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8841ACAE19B696670003A63B /* iOSGraphicsAndAnimationPlayground-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSGraphicsAndAnimationPlayground-Info.plist"; sourceTree = "<group>"; };
+		8841ACB019B696670003A63B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8841ACB219B696670003A63B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8841ACB419B696670003A63B /* iOSGraphicsAndAnimationPlayground-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSGraphicsAndAnimationPlayground-Prefix.pch"; sourceTree = "<group>"; };
+		8841ACB519B696670003A63B /* THAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = THAppDelegate.h; sourceTree = "<group>"; };
+		8841ACB619B696670003A63B /* THAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = THAppDelegate.m; sourceTree = "<group>"; };
+		8841ACB819B696670003A63B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8841ACBE19B696670003A63B /* iOSGraphicsAndAnimationPlaygroundTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSGraphicsAndAnimationPlaygroundTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8841ACBF19B696670003A63B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8841ACC719B696680003A63B /* iOSGraphicsAndAnimationPlaygroundTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSGraphicsAndAnimationPlaygroundTests-Info.plist"; sourceTree = "<group>"; };
+		8841ACC919B696680003A63B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8841ACCB19B696680003A63B /* iOSGraphicsAndAnimationPlaygroundTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iOSGraphicsAndAnimationPlaygroundTests.m; sourceTree = "<group>"; };
+		8841ACE019B6990A0003A63B /* THCALayerWithImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCALayerWithImage.h; sourceTree = "<group>"; };
+		8841ACE119B6990A0003A63B /* THCALayerWithImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCALayerWithImage.m; sourceTree = "<group>"; };
+		8841ACE419B699130003A63B /* THCaps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCaps.h; sourceTree = "<group>"; };
+		8841ACE519B699130003A63B /* THCaps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCaps.m; sourceTree = "<group>"; };
+		8841ACE619B699130003A63B /* THCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCircle.h; sourceTree = "<group>"; };
+		8841ACE719B699130003A63B /* THCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCircle.m; sourceTree = "<group>"; };
+		8841ACE819B699130003A63B /* THCircleWithoutAntialiasing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCircleWithoutAntialiasing.h; sourceTree = "<group>"; };
+		8841ACE919B699130003A63B /* THCircleWithoutAntialiasing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCircleWithoutAntialiasing.m; sourceTree = "<group>"; };
+		8841ACEA19B699130003A63B /* THClippingPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THClippingPath.h; sourceTree = "<group>"; };
+		8841ACEB19B699130003A63B /* THClippingPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THClippingPath.m; sourceTree = "<group>"; };
+		8841ACEC19B699130003A63B /* THContextDrawPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THContextDrawPath.h; sourceTree = "<group>"; };
+		8841ACED19B699130003A63B /* THContextDrawPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THContextDrawPath.m; sourceTree = "<group>"; };
+		8841ACEE19B699130003A63B /* THContextEOFillPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THContextEOFillPath.h; sourceTree = "<group>"; };
+		8841ACEF19B699130003A63B /* THContextEOFillPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THContextEOFillPath.m; sourceTree = "<group>"; };
+		8841ACF019B699130003A63B /* THCubicBezierCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCubicBezierCurve.h; sourceTree = "<group>"; };
+		8841ACF119B699130003A63B /* THCubicBezierCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCubicBezierCurve.m; sourceTree = "<group>"; };
+		8841ACF219B699130003A63B /* THJoins.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THJoins.h; sourceTree = "<group>"; };
+		8841ACF319B699130003A63B /* THJoins.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THJoins.m; sourceTree = "<group>"; };
+		8841ACF419B699130003A63B /* THLabeledView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THLabeledView.h; sourceTree = "<group>"; };
+		8841ACF519B699130003A63B /* THLabeledView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THLabeledView.m; sourceTree = "<group>"; };
+		8841ACF619B699130003A63B /* THLineDashPatterns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THLineDashPatterns.h; sourceTree = "<group>"; };
+		8841ACF719B699130003A63B /* THLineDashPatterns.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THLineDashPatterns.m; sourceTree = "<group>"; };
+		8841ACF819B699130003A63B /* THMultiplyBlendMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THMultiplyBlendMode.h; sourceTree = "<group>"; };
+		8841ACF919B699130003A63B /* THMultiplyBlendMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THMultiplyBlendMode.m; sourceTree = "<group>"; };
+		8841ACFA19B699130003A63B /* THQuadraticBezierCurve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THQuadraticBezierCurve.h; sourceTree = "<group>"; };
+		8841ACFB19B699130003A63B /* THQuadraticBezierCurve.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THQuadraticBezierCurve.m; sourceTree = "<group>"; };
+		8841ACFC19B699130003A63B /* THRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THRectangle.h; sourceTree = "<group>"; };
+		8841ACFD19B699130003A63B /* THRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THRectangle.m; sourceTree = "<group>"; };
+		8841AD0C19B6991A0003A63B /* THDrawRectImplementationScraper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THDrawRectImplementationScraper.h; sourceTree = "<group>"; };
+		8841AD0D19B6991A0003A63B /* THDrawRectImplementationScraper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THDrawRectImplementationScraper.m; sourceTree = "<group>"; };
+		8841AD1019B699220003A63B /* THAnimationsPlayground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THAnimationsPlayground.h; sourceTree = "<group>"; };
+		8841AD1119B699220003A63B /* THAnimationsPlayground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THAnimationsPlayground.m; sourceTree = "<group>"; };
+		8841AD1219B699220003A63B /* THHomeMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THHomeMenu.h; sourceTree = "<group>"; };
+		8841AD1319B699220003A63B /* THHomeMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THHomeMenu.m; sourceTree = "<group>"; };
+		8841AD1419B699220003A63B /* THRudimentsGalleryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THRudimentsGalleryVC.h; sourceTree = "<group>"; };
+		8841AD1519B699220003A63B /* THRudimentsGalleryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THRudimentsGalleryVC.m; sourceTree = "<group>"; };
+		8841AD1619B699220003A63B /* THRudimentsViewDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THRudimentsViewDetailVC.h; sourceTree = "<group>"; };
+		8841AD1719B699220003A63B /* THRudimentsViewDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THRudimentsViewDetailVC.m; sourceTree = "<group>"; };
+		8841AD1C19B6994C0003A63B /* THContstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THContstants.h; sourceTree = "<group>"; };
+		8841AD1D19B6994C0003A63B /* THContstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THContstants.m; sourceTree = "<group>"; };
+		8841AD2119B699E90003A63B /* grass_island.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass_island.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8841ACA019B696670003A63B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8841ACA919B696670003A63B /* CoreGraphics.framework in Frameworks */,
+				8841ACAB19B696670003A63B /* UIKit.framework in Frameworks */,
+				8841ACA719B696670003A63B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8841ACBB19B696670003A63B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8841ACC019B696680003A63B /* XCTest.framework in Frameworks */,
+				8841ACC219B696680003A63B /* UIKit.framework in Frameworks */,
+				8841ACC119B696680003A63B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8841AC9A19B696670003A63B = {
+			isa = PBXGroup;
+			children = (
+				8841ACAC19B696670003A63B /* iOSGraphicsAndAnimationPlayground */,
+				8841ACC519B696680003A63B /* iOSGraphicsAndAnimationPlaygroundTests */,
+				8841ACA519B696670003A63B /* Frameworks */,
+				8841ACA419B696670003A63B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8841ACA419B696670003A63B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8841ACA319B696670003A63B /* iOSGraphicsAndAnimationPlayground.app */,
+				8841ACBE19B696670003A63B /* iOSGraphicsAndAnimationPlaygroundTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8841ACA519B696670003A63B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8841ACA619B696670003A63B /* Foundation.framework */,
+				8841ACA819B696670003A63B /* CoreGraphics.framework */,
+				8841ACAA19B696670003A63B /* UIKit.framework */,
+				8841ACBF19B696670003A63B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8841ACAC19B696670003A63B /* iOSGraphicsAndAnimationPlayground */ = {
+			isa = PBXGroup;
+			children = (
+				8841AD1F19B699E90003A63B /* Resources */,
+				8841ACB519B696670003A63B /* THAppDelegate.h */,
+				8841ACB619B696670003A63B /* THAppDelegate.m */,
+				8841AD1C19B6994C0003A63B /* THContstants.h */,
+				8841AD1D19B6994C0003A63B /* THContstants.m */,
+				8841ACDF19B6990A0003A63B /* LayersAndAnimations */,
+				8841ACE319B699130003A63B /* Rudiments */,
+				8841AD0B19B6991A0003A63B /* Utilities */,
+				8841AD0F19B699220003A63B /* ViewControllers */,
+				8841ACB819B696670003A63B /* Images.xcassets */,
+				8841ACAD19B696670003A63B /* Supporting Files */,
+			);
+			path = iOSGraphicsAndAnimationPlayground;
+			sourceTree = "<group>";
+		};
+		8841ACAD19B696670003A63B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8841ACAE19B696670003A63B /* iOSGraphicsAndAnimationPlayground-Info.plist */,
+				8841ACAF19B696670003A63B /* InfoPlist.strings */,
+				8841ACB219B696670003A63B /* main.m */,
+				8841ACB419B696670003A63B /* iOSGraphicsAndAnimationPlayground-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8841ACC519B696680003A63B /* iOSGraphicsAndAnimationPlaygroundTests */ = {
+			isa = PBXGroup;
+			children = (
+				8841ACCB19B696680003A63B /* iOSGraphicsAndAnimationPlaygroundTests.m */,
+				8841ACC619B696680003A63B /* Supporting Files */,
+			);
+			path = iOSGraphicsAndAnimationPlaygroundTests;
+			sourceTree = "<group>";
+		};
+		8841ACC619B696680003A63B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8841ACC719B696680003A63B /* iOSGraphicsAndAnimationPlaygroundTests-Info.plist */,
+				8841ACC819B696680003A63B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8841ACDF19B6990A0003A63B /* LayersAndAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				8841ACE019B6990A0003A63B /* THCALayerWithImage.h */,
+				8841ACE119B6990A0003A63B /* THCALayerWithImage.m */,
+			);
+			path = LayersAndAnimations;
+			sourceTree = "<group>";
+		};
+		8841ACE319B699130003A63B /* Rudiments */ = {
+			isa = PBXGroup;
+			children = (
+				8841ACE419B699130003A63B /* THCaps.h */,
+				8841ACE519B699130003A63B /* THCaps.m */,
+				8841ACE619B699130003A63B /* THCircle.h */,
+				8841ACE719B699130003A63B /* THCircle.m */,
+				8841ACE819B699130003A63B /* THCircleWithoutAntialiasing.h */,
+				8841ACE919B699130003A63B /* THCircleWithoutAntialiasing.m */,
+				8841ACEA19B699130003A63B /* THClippingPath.h */,
+				8841ACEB19B699130003A63B /* THClippingPath.m */,
+				8841ACEC19B699130003A63B /* THContextDrawPath.h */,
+				8841ACED19B699130003A63B /* THContextDrawPath.m */,
+				8841ACEE19B699130003A63B /* THContextEOFillPath.h */,
+				8841ACEF19B699130003A63B /* THContextEOFillPath.m */,
+				8841ACF019B699130003A63B /* THCubicBezierCurve.h */,
+				8841ACF119B699130003A63B /* THCubicBezierCurve.m */,
+				8841ACF219B699130003A63B /* THJoins.h */,
+				8841ACF319B699130003A63B /* THJoins.m */,
+				8841ACF419B699130003A63B /* THLabeledView.h */,
+				8841ACF519B699130003A63B /* THLabeledView.m */,
+				8841ACF619B699130003A63B /* THLineDashPatterns.h */,
+				8841ACF719B699130003A63B /* THLineDashPatterns.m */,
+				8841ACF819B699130003A63B /* THMultiplyBlendMode.h */,
+				8841ACF919B699130003A63B /* THMultiplyBlendMode.m */,
+				8841ACFA19B699130003A63B /* THQuadraticBezierCurve.h */,
+				8841ACFB19B699130003A63B /* THQuadraticBezierCurve.m */,
+				8841ACFC19B699130003A63B /* THRectangle.h */,
+				8841ACFD19B699130003A63B /* THRectangle.m */,
+			);
+			path = Rudiments;
+			sourceTree = "<group>";
+		};
+		8841AD0B19B6991A0003A63B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8841AD0C19B6991A0003A63B /* THDrawRectImplementationScraper.h */,
+				8841AD0D19B6991A0003A63B /* THDrawRectImplementationScraper.m */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8841AD0F19B699220003A63B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8841AD1019B699220003A63B /* THAnimationsPlayground.h */,
+				8841AD1119B699220003A63B /* THAnimationsPlayground.m */,
+				8841AD1219B699220003A63B /* THHomeMenu.h */,
+				8841AD1319B699220003A63B /* THHomeMenu.m */,
+				8841AD1419B699220003A63B /* THRudimentsGalleryVC.h */,
+				8841AD1519B699220003A63B /* THRudimentsGalleryVC.m */,
+				8841AD1619B699220003A63B /* THRudimentsViewDetailVC.h */,
+				8841AD1719B699220003A63B /* THRudimentsViewDetailVC.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8841AD1F19B699E90003A63B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				8841AD2019B699E90003A63B /* Images */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8841AD2019B699E90003A63B /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8841AD2119B699E90003A63B /* grass_island.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8841ACA219B696670003A63B /* iOSGraphicsAndAnimationPlayground */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8841ACCF19B696680003A63B /* Build configuration list for PBXNativeTarget "iOSGraphicsAndAnimationPlayground" */;
+			buildPhases = (
+				8841AC9F19B696670003A63B /* Sources */,
+				8841ACA019B696670003A63B /* Frameworks */,
+				8841ACA119B696670003A63B /* Resources */,
+				8841AD2319B69B160003A63B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSGraphicsAndAnimationPlayground;
+			productName = iOSGraphicsAndAnimationPlayground;
+			productReference = 8841ACA319B696670003A63B /* iOSGraphicsAndAnimationPlayground.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8841ACBD19B696670003A63B /* iOSGraphicsAndAnimationPlaygroundTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8841ACD219B696680003A63B /* Build configuration list for PBXNativeTarget "iOSGraphicsAndAnimationPlaygroundTests" */;
+			buildPhases = (
+				8841ACBA19B696670003A63B /* Sources */,
+				8841ACBB19B696670003A63B /* Frameworks */,
+				8841ACBC19B696670003A63B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8841ACC419B696680003A63B /* PBXTargetDependency */,
+			);
+			name = iOSGraphicsAndAnimationPlaygroundTests;
+			productName = iOSGraphicsAndAnimationPlaygroundTests;
+			productReference = 8841ACBE19B696670003A63B /* iOSGraphicsAndAnimationPlaygroundTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8841AC9B19B696670003A63B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TH;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "travis holt";
+				TargetAttributes = {
+					8841ACBD19B696670003A63B = {
+						TestTargetID = 8841ACA219B696670003A63B;
+					};
+				};
+			};
+			buildConfigurationList = 8841AC9E19B696670003A63B /* Build configuration list for PBXProject "iOSGraphicsAndAnimationPlayground" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8841AC9A19B696670003A63B;
+			productRefGroup = 8841ACA419B696670003A63B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8841ACA219B696670003A63B /* iOSGraphicsAndAnimationPlayground */,
+				8841ACBD19B696670003A63B /* iOSGraphicsAndAnimationPlaygroundTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8841ACA119B696670003A63B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8841AD2219B699E90003A63B /* grass_island.png in Resources */,
+				8841ACB119B696670003A63B /* InfoPlist.strings in Resources */,
+				8841ACB919B696670003A63B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8841ACBC19B696670003A63B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8841ACCA19B696680003A63B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8841AC9F19B696670003A63B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8841AD0119B699130003A63B /* THClippingPath.m in Sources */,
+				8841ACB719B696670003A63B /* THAppDelegate.m in Sources */,
+				8841AD0519B699130003A63B /* THJoins.m in Sources */,
+				8841AD0219B699130003A63B /* THContextDrawPath.m in Sources */,
+				8841ACB319B696670003A63B /* main.m in Sources */,
+				8841AD0719B699130003A63B /* THLineDashPatterns.m in Sources */,
+				8841ACFE19B699130003A63B /* THCaps.m in Sources */,
+				8841AD0619B699130003A63B /* THLabeledView.m in Sources */,
+				8841ACE219B6990A0003A63B /* THCALayerWithImage.m in Sources */,
+				8841AD1A19B699220003A63B /* THRudimentsGalleryVC.m in Sources */,
+				8841AD0A19B699130003A63B /* THRectangle.m in Sources */,
+				8841AD0019B699130003A63B /* THCircleWithoutAntialiasing.m in Sources */,
+				8841AD0819B699130003A63B /* THMultiplyBlendMode.m in Sources */,
+				8841AD1B19B699220003A63B /* THRudimentsViewDetailVC.m in Sources */,
+				8841AD0919B699130003A63B /* THQuadraticBezierCurve.m in Sources */,
+				8841AD0E19B6991A0003A63B /* THDrawRectImplementationScraper.m in Sources */,
+				8841AD1919B699220003A63B /* THHomeMenu.m in Sources */,
+				8841AD0419B699130003A63B /* THCubicBezierCurve.m in Sources */,
+				8841AD0319B699130003A63B /* THContextEOFillPath.m in Sources */,
+				8841ACFF19B699130003A63B /* THCircle.m in Sources */,
+				8841AD1E19B6994C0003A63B /* THContstants.m in Sources */,
+				8841AD1819B699220003A63B /* THAnimationsPlayground.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8841ACBA19B696670003A63B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8841ACCC19B696680003A63B /* iOSGraphicsAndAnimationPlaygroundTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8841ACC419B696680003A63B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8841ACA219B696670003A63B /* iOSGraphicsAndAnimationPlayground */;
+			targetProxy = 8841ACC319B696680003A63B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8841ACAF19B696670003A63B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8841ACB019B696670003A63B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8841ACC819B696680003A63B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8841ACC919B696680003A63B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8841ACCD19B696680003A63B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8841ACCE19B696680003A63B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8841ACD019B696680003A63B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSGraphicsAndAnimationPlayground/iOSGraphicsAndAnimationPlayground-Prefix.pch";
+				INFOPLIST_FILE = "iOSGraphicsAndAnimationPlayground/iOSGraphicsAndAnimationPlayground-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8841ACD119B696680003A63B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSGraphicsAndAnimationPlayground/iOSGraphicsAndAnimationPlayground-Prefix.pch";
+				INFOPLIST_FILE = "iOSGraphicsAndAnimationPlayground/iOSGraphicsAndAnimationPlayground-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8841ACD319B696680003A63B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOSGraphicsAndAnimationPlayground.app/iOSGraphicsAndAnimationPlayground";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSGraphicsAndAnimationPlayground/iOSGraphicsAndAnimationPlayground-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "iOSGraphicsAndAnimationPlaygroundTests/iOSGraphicsAndAnimationPlaygroundTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8841ACD419B696680003A63B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iOSGraphicsAndAnimationPlayground.app/iOSGraphicsAndAnimationPlayground";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSGraphicsAndAnimationPlayground/iOSGraphicsAndAnimationPlayground-Prefix.pch";
+				INFOPLIST_FILE = "iOSGraphicsAndAnimationPlaygroundTests/iOSGraphicsAndAnimationPlaygroundTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8841AC9E19B696670003A63B /* Build configuration list for PBXProject "iOSGraphicsAndAnimationPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8841ACCD19B696680003A63B /* Debug */,
+				8841ACCE19B696680003A63B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8841ACCF19B696680003A63B /* Build configuration list for PBXNativeTarget "iOSGraphicsAndAnimationPlayground" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8841ACD019B696680003A63B /* Debug */,
+				8841ACD119B696680003A63B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8841ACD219B696680003A63B /* Build configuration list for PBXNativeTarget "iOSGraphicsAndAnimationPlaygroundTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8841ACD319B696680003A63B /* Debug */,
+				8841ACD419B696680003A63B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8841AC9B19B696670003A63B /* Project object */;
+}
