@@ -22,6 +22,7 @@
 - (CALayer *)imageLayer{
   if (!_imageLayer) {
     _imageLayer = [CALayer layer];
+    _imageLayer.cornerRadius = 5.0;
     _imageLayer.bounds = self.bounds;
     _imageLayer.contentsGravity = kCAGravityResizeAspect;
     _imageLayer.contents = (id)[UIImage imageNamed:@"grass_island.png"].CGImage;

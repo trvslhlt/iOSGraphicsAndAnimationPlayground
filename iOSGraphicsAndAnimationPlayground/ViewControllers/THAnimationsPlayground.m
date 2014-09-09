@@ -57,7 +57,7 @@
 - (UITableView *)tableView{
   if (!_tableView) {
     _tableView = [[UITableView alloc] initWithFrame:self.view.bounds];
-    _tableView.backgroundColor = [UIColor clearColor];
+    _tableView.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:0.4];
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     _tableView.dataSource = self;
     _tableView.delegate = self;
@@ -68,7 +68,7 @@
 
 - (NSArray *)animationsArray{
   if (!_animationsArray) {
-    _animationsArray = [NSArray arrayWithObjects:@"THCALayerWithImage", nil];
+    _animationsArray = [NSArray arrayWithObjects:@"THCALayerWithImage", @"THDrawLayerInContext", @"THBasicLayerFilters", @"THImplicitAnimations", nil];
   }
   return _animationsArray;
 }

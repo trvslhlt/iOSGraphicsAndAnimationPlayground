@@ -53,6 +53,9 @@
 		8841AD2E19B69B2B0003A63B /* THMultiplyBlendMode.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8841ACF919B699130003A63B /* THMultiplyBlendMode.m */; };
 		8841AD2F19B69B2B0003A63B /* THQuadraticBezierCurve.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8841ACFB19B699130003A63B /* THQuadraticBezierCurve.m */; };
 		8841AD3019B69B2B0003A63B /* THRectangle.m in CopyFiles */ = {isa = PBXBuildFile; fileRef = 8841ACFD19B699130003A63B /* THRectangle.m */; };
+		888EBA5919BEA04900892696 /* THDrawLayerInContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 888EBA5819BEA04900892696 /* THDrawLayerInContext.m */; };
+		888EBA5C19BEA49D00892696 /* THBasicLayerFilters.m in Sources */ = {isa = PBXBuildFile; fileRef = 888EBA5B19BEA49D00892696 /* THBasicLayerFilters.m */; };
+		888EBA5F19BEACD300892696 /* THImplicitAnimations.m in Sources */ = {isa = PBXBuildFile; fileRef = 888EBA5E19BEACD300892696 /* THImplicitAnimations.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -148,6 +151,12 @@
 		8841AD1C19B6994C0003A63B /* THContstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THContstants.h; sourceTree = "<group>"; };
 		8841AD1D19B6994C0003A63B /* THContstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THContstants.m; sourceTree = "<group>"; };
 		8841AD2119B699E90003A63B /* grass_island.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass_island.png; sourceTree = "<group>"; };
+		888EBA5719BEA04900892696 /* THDrawLayerInContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THDrawLayerInContext.h; sourceTree = "<group>"; };
+		888EBA5819BEA04900892696 /* THDrawLayerInContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THDrawLayerInContext.m; sourceTree = "<group>"; };
+		888EBA5A19BEA49D00892696 /* THBasicLayerFilters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THBasicLayerFilters.h; sourceTree = "<group>"; };
+		888EBA5B19BEA49D00892696 /* THBasicLayerFilters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THBasicLayerFilters.m; sourceTree = "<group>"; };
+		888EBA5D19BEACD300892696 /* THImplicitAnimations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THImplicitAnimations.h; sourceTree = "<group>"; };
+		888EBA5E19BEACD300892696 /* THImplicitAnimations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THImplicitAnimations.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,15 +216,15 @@
 		8841ACAC19B696670003A63B /* iOSGraphicsAndAnimationPlayground */ = {
 			isa = PBXGroup;
 			children = (
-				8841AD1F19B699E90003A63B /* Resources */,
 				8841ACB519B696670003A63B /* THAppDelegate.h */,
 				8841ACB619B696670003A63B /* THAppDelegate.m */,
 				8841AD1C19B6994C0003A63B /* THContstants.h */,
 				8841AD1D19B6994C0003A63B /* THContstants.m */,
+				8841AD0F19B699220003A63B /* ViewControllers */,
+				8841AD1F19B699E90003A63B /* Resources */,
 				8841ACDF19B6990A0003A63B /* LayersAndAnimations */,
 				8841ACE319B699130003A63B /* Rudiments */,
 				8841AD0B19B6991A0003A63B /* Utilities */,
-				8841AD0F19B699220003A63B /* ViewControllers */,
 				8841ACB819B696670003A63B /* Images.xcassets */,
 				8841ACAD19B696670003A63B /* Supporting Files */,
 			);
@@ -256,6 +265,12 @@
 			children = (
 				8841ACE019B6990A0003A63B /* THCALayerWithImage.h */,
 				8841ACE119B6990A0003A63B /* THCALayerWithImage.m */,
+				888EBA5719BEA04900892696 /* THDrawLayerInContext.h */,
+				888EBA5819BEA04900892696 /* THDrawLayerInContext.m */,
+				888EBA5A19BEA49D00892696 /* THBasicLayerFilters.h */,
+				888EBA5B19BEA49D00892696 /* THBasicLayerFilters.m */,
+				888EBA5D19BEACD300892696 /* THImplicitAnimations.h */,
+				888EBA5E19BEACD300892696 /* THImplicitAnimations.m */,
 			);
 			path = LayersAndAnimations;
 			sourceTree = "<group>";
@@ -432,8 +447,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8841AD0119B699130003A63B /* THClippingPath.m in Sources */,
+				888EBA5919BEA04900892696 /* THDrawLayerInContext.m in Sources */,
 				8841ACB719B696670003A63B /* THAppDelegate.m in Sources */,
 				8841AD0519B699130003A63B /* THJoins.m in Sources */,
+				888EBA5C19BEA49D00892696 /* THBasicLayerFilters.m in Sources */,
 				8841AD0219B699130003A63B /* THContextDrawPath.m in Sources */,
 				8841ACB319B696670003A63B /* main.m in Sources */,
 				8841AD0719B699130003A63B /* THLineDashPatterns.m in Sources */,
@@ -441,6 +458,7 @@
 				8841AD0619B699130003A63B /* THLabeledView.m in Sources */,
 				8841ACE219B6990A0003A63B /* THCALayerWithImage.m in Sources */,
 				8841AD1A19B699220003A63B /* THRudimentsGalleryVC.m in Sources */,
+				888EBA5F19BEACD300892696 /* THImplicitAnimations.m in Sources */,
 				8841AD0A19B699130003A63B /* THRectangle.m in Sources */,
 				8841AD0019B699130003A63B /* THCircleWithoutAntialiasing.m in Sources */,
 				8841AD0819B699130003A63B /* THMultiplyBlendMode.m in Sources */,
@@ -572,6 +590,14 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iOSGraphicsAndAnimationPlayground/iOSGraphicsAndAnimationPlayground-Prefix.pch";
 				INFOPLIST_FILE = "iOSGraphicsAndAnimationPlayground/iOSGraphicsAndAnimationPlayground-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRANK_LIBRARY_SEARCH_PATHS)",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"$(FRANK_LDFLAGS)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
